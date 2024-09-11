@@ -1,4 +1,5 @@
 #include "include/list.h"
+#include "include/database.h"
 
 int main(int arg_count, char *args[])
 {
@@ -10,5 +11,13 @@ int main(int arg_count, char *args[])
     } else {
         cout<<"no username added."<<endl;
     }
+
+    Database db;
+    db.write();
+    db.read();
+
+
+
+
     return 0;
 }
